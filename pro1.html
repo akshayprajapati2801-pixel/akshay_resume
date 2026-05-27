@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Akshay | Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        section {
+            padding: 60px 0;
+        }
+        .navbar {
+            background-color: #000;
+        }
+        .navbar a {
+            color: #fff !important;
+        }
+        .hero {
+            background: linear-gradient(to right, #007bff, #00c6ff);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .herosection{
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Akshay</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Akshay</h1>
+        <p>Aspiring Data Analyst</p>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about">
+    <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <p class="text-center">
+            Motivated and detail-oriented aspiring Data Analyst currently pursuing a Data Analyst course.
+            Passionate about data interpretation, reporting, and generating business insights.
+        </p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-3">Excel</div>
+            <div class="col-md-3">SQL</div>
+            <div class="col-md-3">Python</div>
+            <div class="col-md-3">Power BI / Tableau</div>
+            <div class="col-md-3">Data Analysis</div>
+            <div class="col-md-3">Data Visualization</div>
+            <div class="col-md-3">Data Cleaning</div>
+            <div class="col-md-3">Communication</div>
+        </div>
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+    <div class="container">
+        <h2 class="text-center mb-4">Education</h2>
+        <ul class="list-group">
+            <li class="list-group-item">12th Pass - Higher Secondary Education</li>
+            <li class="list-group-item">Currently Pursuing Data Analyst Course</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Projects</h2>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <h4>Sales Data Analysis</h4>
+                    <p>Analyzed sales data using Excel & SQL, identified trends and top-performing products.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <h4>Customer Dashboard</h4>
+                    <p>Built interactive dashboard using Power BI / Tableau showing customer insights.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact</h2>
+
+        <div class="text-center">
+            <p><strong>Name:</strong> Akshay</p>
+            <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+            <p><strong>Email:</strong> yourname@email.com</p>
+            <p><strong>Location:</strong> Haryana, India</p>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contactForm" class="mt-4">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" placeholder="Your Message" required></textarea>
+            </div>
+            <button class="btn btn-primary w-100">Send Message</button>
+        </form>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Akshay | Portfolio</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(e){
+        e.preventDefault();
+        alert("Message sent successfully!");
+    });
+</script>
+
+</body>
+</html>
